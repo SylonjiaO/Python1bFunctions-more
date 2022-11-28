@@ -11,7 +11,9 @@ try:
     print("File Content: ")
     print(data)
     fv1.close
-
+    lines=data.split("\n")
+    print("Total number of lines :", len(lines))
+    print("Byte Size of The File :", os.path.getsize("C:\\Sylonjia\\PythonDescription.txt"))
 except FileNotFoundError:
     print("Sorry Wrong Path, Try Again")
 
